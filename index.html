@@ -14,7 +14,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <title>PostBook | A Social App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <title>PostBook</title>
   <style>
     body {
       background-color: whitesmoke;
@@ -35,11 +37,115 @@
 
     .bck {
       background-color: rgb(212, 212, 212);
+      border-radius: 12px;
     }
 
-    .fbg {
-      background-color: rgb(54, 124, 165);
-      color: whitesmoke;
+    .footer-dark {
+      padding: 50px 0;
+      color: #f0f9ff;
+      background-color: #282d32;
+    }
+
+    .footer-dark h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .footer-dark ul {
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .footer-dark ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+
+    .footer-dark ul a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+
+    .footer-dark .item.text {
+      margin-bottom: 36px;
+    }
+
+    @media (max-width:767px) {
+      .footer-dark .item.text {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-dark .item.text p {
+      opacity: 0.6;
+      margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+      text-align: center;
+    }
+
+    @media (max-width:991px) {
+      .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+
+    .footer-dark .item.social>a {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+      margin: 0 8px;
+      color: #fff;
+      opacity: 0.75;
+    }
+
+    .footer-dark .item.social>a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-dark .copyright {
+      text-align: center;
+      padding-top: 24px;
+      opacity: 0.3;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+
+    .ani {
+      animation: color-change 2s infinite;
+    }
+
+    @keyframes color-change {
+      0% {
+        color: rgb(31, 140, 212);
+      }
+
+      50% {
+        color: rgb(34, 158, 207);
+      }
+
+      100% {
+        color: rgb(0, 225, 255);
+      }
     }
   </style>
 </head>
@@ -49,7 +155,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid lsp">
-      <a class="navbar-brand px-3" href="index.html">PostBook</a>
+      <a class="navbar-brand px-3" href="home.html">PostBook</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,7 +163,7 @@
       <div class="d-flex justify-content-center align-items-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item px-3">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item px-3">
             <a class="nav-link active" aria-current="page" href="notes.html">Users</a>
@@ -85,11 +191,11 @@
   </nav>
 
   <!--paragraph-->
-  <div class="row pad">
-    <h5 class="lsp animate__animated animate__slideInLeft">Welcome, User</h5>
-    <ul class="lsp jus pt-3 px-5 animate__animated animate__slideInLeft animate__delay-1s">
-      Today's Updates <br><br>
-      <li class="pb-2">Lorem Ipsum is simply <u><i>dummy text of the printing</i></u> and typesetting industry. </li>
+  <div class="row mx-4">
+    <h5 class="lsp animate__animated animate__slideInLeft pt-5 pb-4">Welcome, User</h5>
+    <ul class="lsp jus px-5 py-3 animate__animated animate__slideInLeft animate__delay-1s bck">
+      <h5 class="lsp py-3">Today's Updates</h5>
+      <li class="pb-2">Lorem Ipsum is simply <u>dummy text of the printing</u> and typesetting industry. </li>
       <li class="pb-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
         printer took
         a <u>galley of type and scrambled it to make a type specimen book.</u> Lorem Ipsum is simply dummy text of the
@@ -100,14 +206,14 @@
         a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing
         and typesetting industry.</li>
     </ul>
-    <a href="http://www.google.com/" class="lsp px-5 animate__animated animate__slideInLeft animate__delay-1s">EXPLORE
-      MORE -></a>
+
   </div>
 
   <!--Cards-->
   <!--1.-->
-  <div class="row pad">
-    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+  <div class="row">
+    <h5 class="lsp px-5 pt-4 pb-3 ani">Trending Posts</h5>
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-2s" style="width: 27rem;">
       <img
         src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bizarre-amusement-abstract-fluid-acrylic-painting-jenny-rainbow.jpg"
         class="card-img-top" alt="Abstract" style="height: 240px;">
@@ -120,7 +226,7 @@
         <a href="posts.html" class="btn btn-primary">Explore More</a>
       </div>
     </div>
-    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-2s" style="width: 27rem;">
       <img
         src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/far-galaxies-2-abstract-fluid-acrylic-painting-jenny-rainbow.jpg"
         class="card-img-top" alt="Abstract">
@@ -133,7 +239,7 @@
         <a href="posts.html" class="btn btn-primary">Explore More</a>
       </div>
     </div>
-    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-2s" style="width: 27rem;">
       <img
         src="https://media.istockphoto.com/photos/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-picture-id1159617302?k=6&m=1159617302&s=170667a&w=0&h=LDGKd4a7n8IatDuyqAYi6w42zEh9HwJCpvFhlSbL7oU="
         class="card-img-top" alt="Abstract">
@@ -148,46 +254,74 @@
     </div>
   </div>
 
-  <div class="row py-4">
-    <div class="mx-auto animate__animated animate__slideInLeft animate__delay-1s" style="width: 645px;">
-      <div class="card">
+  <!--Albums-->
+  <div class="row pb-5">
+    <h5 class="lsp px-5 pt-5 pb-3 ani">Trending Albums</h5>
+    <div class="mx-auto animate__animated animate__slideInLeft animate__delay-3s" style="width: 720px;">
+      <div class="card lsp">
         <h5 class="card-header text-center">The Weekend</h5>
-        <div class="card-body">
+        <div class="card-body lsp">
           <h5 class="card-title text-center">Save Your Tears</h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maiores dicta! Harum
             obcaecati dolorum, nostrum cum placeat, voluptates molestiae voluptatum sit, eligendi laborum tenetur.
             Suscipit
             adipisci beatae alias cupiditate quas!</p>
-          <a href="albums.html" class="btn btn-primary">Explore More</a>
+          <a href="albums.html" class="btn text-primary">Explore More</a>
         </div>
       </div>
     </div>
-    <div class="mx-auto animate__animated animate__slideInRight animate__delay-1s" style="width: 645px;">
-      <div class="card">
-        <h5 class="card-header text-center">The Weekend</h5>
-        <div class="card-body">
-          <h5 class="card-title text-center">Save Your Tears</h5>
+    <div class="mx-auto animate__animated animate__slideInRight animate__delay-3s" style="width: 720px;">
+      <div class="card lsp">
+        <h5 class="card-header text-center">BlackBear</h5>
+        <div class="card-body lsp">
+          <h5 class="card-title text-center">Do Re Mi</h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maiores dicta! Harum
             obcaecati dolorum, nostrum cum placeat, voluptates molestiae voluptatum sit, eligendi laborum tenetur.
             Suscipit
             adipisci beatae alias cupiditate quas!</p>
-          <a href="albums.html" class="btn btn-primary">Explore More</a>
+          <a href="albums.html" class="btn text-primary">Explore More</a>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="footer py-5 fbg">
-    <div class="container">
-      <div class="d-flex jsutify-content-center align-content-center">
-        <span class="lsp px-5">PostBook</span>
-
-        <div class="lsp px-5"><small>Contact us: postbook@postbook.com <br> bookpost@postbook.com</small></div>
-        <div class="lsp px-5"><small>Visit us: 113/2 PostBook Office, Mumbai-01</small></div>
-        <div class="lsp px-5"><small>Social Medai: @postbook.com/ig <br> @postbook/twitter</small></div>
+  <!--Footer-->
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item lsp">
+            <h3>Services</h3>
+            <ul>
+              <li class="py-2"><a href="#">Web design</a></li>
+              <li class="py-2"><a href="#">Development</a></li>
+              <li class="py-2"><a href="#">Hosting</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item lsp">
+            <h3>About</h3>
+            <ul>
+              <li class="py-2"><a href="#">Company</a></li>
+              <li class="py-2"><a href="#">Team</a></li>
+              <li class="py-2"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text lsp">
+            <h3>PostBook</h3>
+            <p class="py-2">Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+              rhoncus
+              elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+          </div>
+          <div class="col item social pt-3"><a href="http://www.facebook.com/"><i
+                class="icon ion-social-facebook"></i></a><a href="https://www.twitter.com/"><i
+                class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com/"><i
+                class="icon ion-social-snapchat"></i></a><a href="https://www.instgram.com/"><i
+                class="icon ion-social-instagram"></i></a></div>
+        </div>
+        <p class="copyright lsp">PostBook © 2021</p>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
 
 </body>
