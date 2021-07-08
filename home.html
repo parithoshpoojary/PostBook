@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>PostBook</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .lsp {
+      letter-spacing: 2px;
+    }
+
+    .pad {
+      padding: 30px 20px 15px 20px;
+    }
+
+    .jus {
+      text-align: justify;
+    }
+
+    .bck {
+      background-color: rgb(212, 212, 212);
+    }
+
+    .fbg {
+      background-color: rgb(54, 124, 165);
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid lsp">
+      <a class="navbar-brand px-3" href="home.html">PostBook</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex justify-content-center align-items-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="notes.html">Users</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="posts.html">Posts</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="todos.html">Todos</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="albums.html">Albums</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav me mb-2 mb-lg-0 lsp">
+        <li class="nav-item px-3">
+          <a class="nav-link active" aria-current="page" href="signup.html">Signup</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link active" aria-current="page" href="sigin.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--paragraph-->
+  <div class="row pad">
+    <h5 class="lsp animate__animated animate__slideInLeft">Welcome, User</h5>
+    <ul class="lsp jus pt-3 px-5 animate__animated animate__slideInLeft animate__delay-1s">
+      Today's Updates <br><br>
+      <li class="pb-2">Lorem Ipsum is simply <u><i>dummy text of the printing</i></u> and typesetting industry. </li>
+      <li class="pb-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took
+        a <u>galley of type and scrambled it to make a type specimen book.</u> Lorem Ipsum is simply dummy text of the
+        printing
+        and typesetting industry.</li>
+      <li class="pb-2">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took
+        a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry.</li>
+    </ul>
+    <a href="http://www.google.com/" class="lsp px-5 animate__animated animate__slideInLeft animate__delay-1s">EXPLORE
+      MORE -></a>
+  </div>
+
+  <!--Cards-->
+  <!--1.-->
+  <div class="row pad">
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+      <img
+        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bizarre-amusement-abstract-fluid-acrylic-painting-jenny-rainbow.jpg"
+        class="card-img-top" alt="Abstract" style="height: 240px;">
+      <div class="card-body just">
+        <h5 class="card-title">PostBook - 1</h5>
+        <p class="card-text jus">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+          a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="posts.html" class="btn btn-primary">Explore More</a>
+      </div>
+    </div>
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+      <img
+        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/far-galaxies-2-abstract-fluid-acrylic-painting-jenny-rainbow.jpg"
+        class="card-img-top" alt="Abstract">
+      <div class="card-body just">
+        <h5 class="card-title">PostBook - 2</h5>
+        <p class="card-text jus">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+          a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="posts.html" class="btn btn-primary">Explore More</a>
+      </div>
+    </div>
+    <div class="card pad mx-auto animate__animated animate__fadeIn animate__delay-1s" style="width: 25rem;">
+      <img
+        src="https://media.istockphoto.com/photos/hand-painted-background-with-mixed-liquid-blue-and-golden-paints-picture-id1159617302?k=6&m=1159617302&s=170667a&w=0&h=LDGKd4a7n8IatDuyqAYi6w42zEh9HwJCpvFhlSbL7oU="
+        class="card-img-top" alt="Abstract">
+      <div class="card-body just">
+        <h5 class="card-title">PostBook - 3</h5>
+        <p class="card-text jus">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+          a galley of type and scrambled it to make a type specimen book.</p>
+        <a href="posts.html" class="btn btn-primary">Explore More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row py-4">
+    <div class="mx-auto animate__animated animate__slideInLeft animate__delay-1s" style="width: 645px;">
+      <div class="card">
+        <h5 class="card-header text-center">The Weekend</h5>
+        <div class="card-body">
+          <h5 class="card-title text-center">Save Your Tears</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maiores dicta! Harum
+            obcaecati dolorum, nostrum cum placeat, voluptates molestiae voluptatum sit, eligendi laborum tenetur.
+            Suscipit
+            adipisci beatae alias cupiditate quas!</p>
+          <a href="albums.html" class="btn btn-primary">Explore More</a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto animate__animated animate__slideInRight animate__delay-1s" style="width: 645px;">
+      <div class="card">
+        <h5 class="card-header text-center">The Weekend</h5>
+        <div class="card-body">
+          <h5 class="card-title text-center">Save Your Tears</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, maiores dicta! Harum
+            obcaecati dolorum, nostrum cum placeat, voluptates molestiae voluptatum sit, eligendi laborum tenetur.
+            Suscipit
+            adipisci beatae alias cupiditate quas!</p>
+          <a href="albums.html" class="btn btn-primary">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer py-5 fbg">
+    <div class="container">
+      <div class="d-flex jsutify-content-center align-content-center">
+        <span class="lsp px-5">PostBook</span>
+
+        <div class="lsp px-5"><small>Contact us: postbook@postbook.com <br> bookpost@postbook.com</small></div>
+        <div class="lsp px-5"><small>Visit us: 113/2 PostBook Office, Mumbai-01</small></div>
+        <div class="lsp px-5"><small>Social Medai: @postbook.com/ig <br> @postbook/twitter</small></div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
